@@ -8,20 +8,11 @@ This includes a storage account for logs and Network Watcher.
 Example
 ------------
 ```
-module "vnet" {
+module "acct" {
   source = "git::https://github.com/fstuck37/terraform-azure-subscription.git"
-  region = var.region
-  region = var.regions
-
+  region    = var.region
+  regions   = var.regions
   name-vars = var.name-vars
-  vnet-cidrs = var.vnet-cidrs
-  subnets = var.subnets  
-  domain_name_servers = var.domain_name_servers
-  tags = var.tags
-}
-
-variable "log-storage-account" {
-  default = "/subscriptions/12345678-abcd-1234-def1-1234567890ab/resourceGroups/rg_storageaccount/providers/Microsoft.Storage/storageAccounts/logsexample"
 }
 
 variable "region" {
@@ -54,3 +45,4 @@ Output Reference
 ------------
    * **azurerm_storage_account_ids** - Storage Account IDS
    * **network_watcher_names** - Network Watcher Name
+   * **network_watcher_resource_group_name** - The name of the resource group

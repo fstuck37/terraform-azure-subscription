@@ -52,6 +52,4 @@ Argument Reference
 
 Output Reference
 ------------
-   * **azurerm_storage_account_name** - Storage Account Name
-   * **azurerm_storage_account_id** - Storage Account id
-   * **azurerm_storage_account_ids** - 
+   * **azurerm_storage_account_ids** - Storage Account IDS

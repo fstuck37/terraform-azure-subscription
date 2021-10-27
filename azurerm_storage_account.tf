@@ -5,6 +5,5 @@ resource "azurerm_storage_account" "regions_logsa" {
     location                 = each.key
     account_replication_type = var.account_replication_type
     account_tier             = var.account_tier
-    enable_blob_encryption   = true
     tags                     = var.tags
 }

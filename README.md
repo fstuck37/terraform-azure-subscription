@@ -53,4 +53,4 @@ Argument Reference
 Output Reference
 ------------
    * **azurerm_storage_account_ids** - Storage Account IDS
-   * **network_watcher_name** - Network Watcher Name
+   * **network_watcher_names** - Network Watcher Name

@@ -1,5 +1,5 @@
 output "azurerm_storage_account_ids" {
-  value = azurerm_storage_account.regions_logsa
+  value = local.azurerm_storage_account_ids
 }
 
 output "network_watcher_name" {

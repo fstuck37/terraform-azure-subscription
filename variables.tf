@@ -38,3 +38,9 @@ variable "account_tier" {
   type = string
   default = "Standard"
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "Optional : A map of tags to assign to the resource."
+  default     = {}
+}

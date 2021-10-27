@@ -4,6 +4,6 @@ locals {
   }
 
   network_watcher_names = {
-    for k, wat in azurerm_storage_account.azurerm_network_watcher : k => wat.name
+    for k, wat in azurerm_storage_account.flow-log : k => wat.name
   }
 }
